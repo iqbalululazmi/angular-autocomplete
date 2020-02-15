@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-autocorrect';
+  formControlValue = ''
+  
+  getChoiceLabel(choice: string) {
+    return `${choice} `;
+  }
+
 }
+

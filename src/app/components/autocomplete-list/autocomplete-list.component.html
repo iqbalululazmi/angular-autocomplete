@@ -1,0 +1,8 @@
+<ul *ngIf="choices?.length > 0" #dropdownMenu class="dropdown-menu formula" [style.top.px]="position?.top"
+  [style.left.px]="position?.left">
+  <li *ngFor="let choice of choices; trackBy:trackById" [class.active]="activeChoice === choice">
+    <div class="formula-list" (click)="selectChoice.next(choice)">
+      {{ choice }}
+    </div>
+  </li>
+</ul>

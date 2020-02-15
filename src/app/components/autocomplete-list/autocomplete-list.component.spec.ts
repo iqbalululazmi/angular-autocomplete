@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AutocorrectListComponent } from './autocorrect-list.component';
+import { AutocompleteListComponent } from './autocomplete-list.component';
 
-describe('AutocorrectListComponent', () => {
-  let component: AutocorrectListComponent;
-  let fixture: ComponentFixture<AutocorrectListComponent>;
+describe('AutocompleteListComponent', () => {
+  let component: AutocompleteListComponent;
+  let fixture: ComponentFixture<AutocompleteListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AutocorrectListComponent ]
+      declarations: [ AutocompleteListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AutocorrectListComponent);
+    fixture = TestBed.createComponent(AutocompleteListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
