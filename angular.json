@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "angular-autocorrect": {
+    "angular-autocomplete": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-autocorrect",
+            "outputPath": "dist/angular-autocomplete",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-autocorrect:build"
+            "browserTarget": "angular-autocomplete:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-autocorrect:build:production"
+              "browserTarget": "angular-autocomplete:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-autocorrect:build"
+            "browserTarget": "angular-autocomplete:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-autocorrect:serve"
+            "devServerTarget": "angular-autocomplete:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-autocorrect:serve:production"
+              "devServerTarget": "angular-autocomplete:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-autocorrect"
+  "defaultProject": "angular-autocomplete"
 }
